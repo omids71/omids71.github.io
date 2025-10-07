@@ -1,1 +1,118 @@
-<h1>Automation Page</h1>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات اتوماسیون شرکتی | Omid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css"> 
+    <style>
+        /* تنظیمات سفارشی Tailwind */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1E3A8A', 
+                        'secondary-light': '#D1D5DB', 
+                    },
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'Tahoma', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-extrabold text-primary-dark">
+                OMID
+            </div>
+            <button class="md:hidden text-primary-dark text-2xl" id="menu-button">☰</button>
+            
+            <nav class="hidden md:flex space-x-4 space-x-reverse text-sm font-medium">
+                <a href="../index.html" class="text-gray-600 hover:text-primary-dark p-2">خانه</a>
+                <a href="../about.html" class="text-gray-600 hover:text-primary-dark p-2">درباره من</a>
+                <a href="automation.html" class="text-primary-dark hover:text-blue-700 p-2 border-b-2 border-primary-dark">خدمات</a>
+                <a href="../articles.html" class="text-gray-600 hover:text-primary-dark p-2">مقالات</a>
+                <a href="../contact.html" class="bg-primary-dark text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200">تماس</a>
+            </nav>
+        </div>
+        <nav class="hidden md:hidden bg-gray-50 border-t" id="mobile-menu">
+            <a href="../index.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">خانه</a>
+            <a href="../about.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">درباره من</a>
+            <a href="automation.html" class="block py-2 px-4 text-primary-dark border-r-4 border-primary-dark">خدمات</a>
+            <a href="../articles.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">مقالات</a>
+            <a href="../contact.html" class="block py-2 px-4 text-white bg-primary-dark mt-2 hover:bg-blue-700">تماس</a>
+        </nav>
+    </header>
+
+    <main class="py-12 md:py-20">
+        <div class="container mx-auto px-4">
+            
+            <header class="text-center mb-12">
+                <h1 class="text-5xl font-extrabold text-primary-dark mb-4">
+                    اتوماسیون شرکتی و بهینه‌سازی فرآیندها
+                </h1>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    از اسکریپت‌های ساده تا سیستم‌های مبتنی بر AI، فرآیندهای کسب‌وکار شما را خودکار و هوشمند می‌کنم.
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-16">
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-primary-dark/70 transform transition duration-500 hover:scale-[1.02]">
+                    <span class="text-4xl text-primary-dark mb-4 block">🤖</span>
+                    <h2 class="text-2xl font-bold mb-3">تحلیل و طراحی نقشه راه</h2>
+                    <p class="text-gray-600 mb-4">شناسایی گلوگاه‌ها، ترسیم نمودار جریان کار (Workflow) و ارائه استراتژی جامع برای اتوماسیون. طراحی سیستم‌های خودکار قبل از شروع کدنویسی.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-primary-dark/70 transform transition duration-500 hover:scale-[1.02]">
+                    <span class="text-4xl text-primary-dark mb-4 block">⚙️</span>
+                    <h2 class="text-2xl font-bold mb-3">اتصال سیستم‌های مجزا (API Integration)</h2>
+                    <p class="text-gray-600 mb-4">توسعه اسکریپت‌های قوی برای اتصال پلتفرم‌های مختلف (مانند CRM، مالی و فروش) و تبادل داده‌ها بدون دخالت انسانی.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-primary-dark/70 transform transition duration-500 hover:scale-[1.02]">
+                    <span class="text-4xl text-primary-dark mb-4 block">📊</span>
+                    <h2 class="text-2xl font-bold mb-3">هوشمندسازی با AI/ML</h2>
+                    <p class="text-gray-600 mb-4">استفاده از اصول هوش مصنوعی و یادگیری ماشین (در بخش‌های پشتیبانی، تحلیل گزارشات و پیش‌بینی) برای افزایش کارایی اتوماسیون.</p>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center bg-primary-dark/90 p-10 rounded-xl text-white">
+                <h3 class="text-3xl font-bold mb-4">آیا آماده‌اید تا هزینه‌ها را کاهش دهید؟</h3>
+                <p class="text-lg mb-6 opacity-90">به جای کار دستی، روی هوشمندسازی فرآیندهای تکراری سرمایه‌گذاری کنید.</p>
+                <a href="../contact.html" class="btn-primary inline-block text-lg bg-white !text-primary-dark hover:bg-gray-200 shadow-lg">
+                    درخواست مشاوره رایگان
+                </a>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <div class="mb-4 space-x-4 space-x-reverse">
+                <a href="../index.html" class="hover:text-white transition duration-200">خانه</a> |
+                <a href="../contact.html" class="hover:text-white transition duration-200">تماس</a> |
+                <a href="https://github.com/omids71" class="hover:text-white transition duration-200">GitHub</a> |
+                <a href="https://trawin.ir" class="hover:text-white transition duration-200">Trawin.ir</a>
+            </div>
+            <p>&copy; ۲۰۲۵ Omid. کلیه حقوق محفوظ است. توسعه داده شده با عشق و Tailwind CSS.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

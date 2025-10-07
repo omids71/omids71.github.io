@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omid | معمار راه‌حل‌های دیجیتال</title>
+    <title>Omid - برنامه‌نویس وب، اتوماسیون و AI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
@@ -13,8 +13,8 @@
             theme: {
                 extend: {
                     colors: {
-                        'primary-dark': '#1E3A8A', /* آبی تیره حرفه‌ای */
-                        'secondary-light': '#D1D5DB', /* خاکستری ملایم */
+                        'primary-dark': '#1E3A8A', /* آبی تیره */
+                        'secondary-light': '#D1D5DB', /* خاکستری روشن */
                     },
                     fontFamily: {
                         sans: ['Vazirmatn', 'Tahoma', 'sans-serif'],
@@ -50,61 +50,97 @@
         </nav>
     </header>
 
-    <main>
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-5xl font-extrabold text-primary-dark mb-4 leading-tight">
-                    معمار راه‌حل‌های دیجیتال
-                </h1>
-                <h2 class="text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-                    توسعه فول استک، اتوماسیون هوشمند سازمانی و اسکریپت‌نویسی پیشرفته.
-                </h2>
-                <div class="space-x-4 space-x-reverse">
-                    <a href="services/automation.html" class="bg-primary-dark text-white px-8 py-3 rounded-xl text-lg font-bold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg">
-                        مشاهده خدمات
-                    </a>
-                    <a href="contact.html" class="bg-gray-200 text-gray-800 px-8 py-3 rounded-xl text-lg font-bold hover:bg-gray-300 transition duration-300 transform hover:scale-105">
-                        تماس بگیرید
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h3 class="text-3xl font-bold text-gray-800 mb-10 text-center">تخصص‌های اصلی</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-primary-dark">
-                        <h4 class="text-xl font-bold mb-3 text-primary-dark">اتوماسیون شرکتی</h4>
-                        <p class="text-gray-600">طراحی و پیاده‌سازی سیستم‌های هوشمند برای خودکارسازی فرآیندهای کسب و کار و صرفه‌جویی در زمان و منابع.</p>
-                        <a href="services/automation.html" class="mt-4 inline-block text-sm text-primary-dark hover:text-blue-700 font-bold">بیشتر بدانید →</a>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-primary-dark">
-                        <h4 class="text-xl font-bold mb-3 text-primary-dark">توسعه وب و اپلیکیشن</h4>
-                        <p class="text-gray-600">ساخت وب‌سایت‌ها و اپلیکیشن‌های قوی و مقیاس‌پذیر از سمت فرانت‌اند تا بک‌اند.</p>
-                        <a href="services/web-design.html" class="mt-4 inline-block text-sm text-primary-dark hover:text-blue-700 font-bold">بیشتر بدانید →</a>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-primary-dark">
-                        <h4 class="text-xl font-bold mb-3 text-primary-dark">اسکریپت و افزونه</h4>
-                        <p class="text-gray-600">توسعه اسکریپت‌های سفارشی، پلاگین‌ها و ابزارهای خاص منظوره با بهره‌گیری از هوش مصنوعی.</p>
-                        <a href="services/plugins.html" class="mt-4 inline-block text-sm text-primary-dark hover:text-blue-700 font-bold">بیشتر بدانید →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-16 bg-primary-dark text-white">
-            <div class="container mx-auto px-4 text-center">
-                <h3 class="text-3xl font-bold mb-4">آیا آماده راه‌اندازی پروژه بعدی خود هستید؟</h3>
-                <p class="text-lg mb-8 opacity-90">سابقه ۱۶ گیگابایت RAM، Ryzen 5 و تجربه توسعه فول استک من در خدمت پروژه شماست.</p>
-                <a href="about.html" class="bg-white text-primary-dark px-8 py-3 rounded-xl text-lg font-bold hover:bg-gray-200 transition duration-300 shadow-xl">
-                    با من بیشتر آشنا شوید
+    <main class="py-12 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
+                <span class="text-primary-dark">امید،</span> متخصص توسعه وب و اتوماسیون
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-10">
+                برنامه‌نویس فول استک با تخصص در **اتوماسیون شرکتی**، **توسعه اسکریپت** و ساخت وب‌سایت‌های قوی مبتنی بر وردپرس، المنتور پرو و WooCommerce.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 sm:space-x-reverse">
+                <a href="contact.html" class="btn-primary">
+                    شروع یک پروژه جدید
+                </a>
+                <a href="about.html" class="bg-white text-primary-dark border-2 border-primary-dark hover:bg-gray-100 px-8 py-3 rounded-xl font-bold transition duration-200 shadow-md">
+                    درباره سوابق من
                 </a>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="bg-gray-800 text-gray-400 py-8">
+    <section class="bg-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">تخصص‌های کلیدی من</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                
+                <a href="services/automation.html" class="block p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-blue-500 hover:scale-[1.03] bg-gray-50">
+                    <span class="text-4xl block mb-3">🤖</span>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">اتوماسیون شرکتی</h3>
+                    <p class="text-sm text-gray-600">هوشمندسازی فرآیندها و حذف کارهای تکراری.</p>
+                </a>
+
+                <a href="services/web-design.html" class="block p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-green-500 hover:scale-[1.03] bg-gray-50">
+                    <span class="text-4xl block mb-3">💻</span>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">توسعه وب فول استک</h3>
+                    <p class="text-sm text-gray-600">طراحی سایت‌های وردپرسی و توسعه اپلیکیشن‌های سفارشی.</p>
+                </a>
+                
+                <a href="services/plugins.html" class="block p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-yellow-500 hover:scale-[1.03] bg-gray-50">
+                    <span class="text-4xl block mb-3">⚙️</span>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">اسکریپت و افزونه</h3>
+                    <p class="text-sm text-gray-600">نوشتن کدهای کوچک و سبک برای حل مشکلات بزرگ.</p>
+                </a>
+
+                <a href="services/landing-page.html" class="block p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-red-500 hover:scale-[1.03] bg-gray-50">
+                    <span class="text-4xl block mb-3">📈</span>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">لندینگ پیچ</h3>
+                    <p class="text-sm text-gray-600">ساخت صفحات فرود با تمرکز حداکثری بر نرخ تبدیل.</p>
+                </a>
+                
+                <a href="services/components.html" class="block p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-purple-500 hover:scale-[1.03] bg-gray-50">
+                    <span class="text-4xl block mb-3">🧩</span>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">اجزای سفارشی وب</h3>
+                    <p class="text-sm text-gray-600">طراحی ویجت‌های اختصاصی المنتور و ماژول‌های مورد نیاز.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="lg:flex lg:space-x-10 lg:space-x-reverse items-center bg-primary-dark/5 p-8 rounded-xl shadow-inner">
+                <div class="lg:w-1/2 mb-6 lg:mb-0">
+                    <h2 class="text-3xl font-extrabold text-gray-900 mb-4">
+                        چرا باید با من کار کنید؟
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        من به عنوان یک توسعه‌دهنده باتجربه، همیشه دنبال راهکارهای **دقیق** و **سریع** هستم. تخصص من نه تنها در کدنویسی، بلکه در استفاده از هوش و سیاست یک شطرنج‌باز برای پیش‌بینی و جلوگیری از مشکلات فنی در آینده است.
+                    </p>
+                    <a href="about.html" class="text-primary-dark font-bold hover:text-blue-700 transition duration-200">
+                        مشاهده مشخصات فنی و سوابق کامل →
+                    </a>
+                </div>
+                <div class="lg:w-1/2">
+                     <ul class="space-y-3 text-base text-gray-700 bg-white p-6 rounded-lg shadow-md">
+                        <li class="flex justify-between border-b pb-2">
+                            <span class="font-medium text-primary-dark">تخصص اصلی:</span> <span>وب، اتوماسیون، اسکریپت‌نویسی</span>
+                        </li>
+                        <li class="flex justify-between border-b pb-2">
+                            <span class="font-medium text-primary-dark">هاستینگ:</span> <span>Mihan Web Host (3GB cPanel)</span>
+                        </li>
+                        <li class="flex justify-between pb-2">
+                            <span class="font-medium text-primary-dark">ابزار کار:</span> <span>HP Ryzen 5 (16GB RAM)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-gray-800 text-gray-400 py-8 mt-10">
         <div class="container mx-auto px-4 text-center text-sm">
             <div class="mb-4 space-x-4 space-x-reverse">
                 <a href="index.html" class="hover:text-white transition duration-200">خانه</a> |

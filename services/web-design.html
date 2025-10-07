@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات طراحی وب و اپلیکیشن | Omid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css"> 
+    <style>
+        /* تنظیمات سفارشی Tailwind */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1E3A8A', 
+                        'secondary-light': '#D1D5DB', 
+                    },
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'Tahoma', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-extrabold text-primary-dark">
+                OMID
+            </div>
+            <button class="md:hidden text-primary-dark text-2xl" id="menu-button">☰</button>
+            
+            <nav class="hidden md:flex space-x-4 space-x-reverse text-sm font-medium">
+                <a href="../index.html" class="text-gray-600 hover:text-primary-dark p-2">خانه</a>
+                <a href="../about.html" class="text-gray-600 hover:text-primary-dark p-2">درباره من</a>
+                <a href="automation.html" class="text-primary-dark hover:text-blue-700 p-2 border-b-2 border-primary-dark">خدمات</a>
+                <a href="../articles.html" class="text-gray-600 hover:text-primary-dark p-2">مقالات</a>
+                <a href="../contact.html" class="bg-primary-dark text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200">تماس</a>
+            </nav>
+        </div>
+        <nav class="hidden md:hidden bg-gray-50 border-t" id="mobile-menu">
+            <a href="../index.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">خانه</a>
+            <a href="../about.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">درباره من</a>
+            <a href="automation.html" class="block py-2 px-4 text-primary-dark border-r-4 border-primary-dark">خدمات</a>
+            <a href="../articles.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">مقالات</a>
+            <a href="../contact.html" class="block py-2 px-4 text-white bg-primary-dark mt-2 hover:bg-blue-700">تماس</a>
+        </nav>
+    </header>
+
+    <main class="py-12 md:py-20">
+        <div class="container mx-auto px-4">
+            
+            <header class="text-center mb-12">
+                <h1 class="text-5xl font-extrabold text-primary-dark mb-4">
+                    طراحی وب‌سایت و توسعه فول استک
+                </h1>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    تخصص در ساخت پلتفرم‌های قوی با وردپرس، المنتور پرو، WooCommerce و توسعه سفارشی اپلیکیشن‌های وب.
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-16">
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-primary-dark/70 transform transition duration-500 hover:scale-[1.02]">
+                    <span class="text-4xl text-primary-dark mb-4 block">🛒</span>
+                    <h2 class="text-2xl font-bold mb-3">پلتفرم‌های تجارت الکترونیک (WooCommerce)</h2>
+                    <p class="text-gray-600 mb-4">راه‌اندازی فروشگاه‌های آنلاین امن و مقیاس‌پذیر با تمرکز بر عملکرد سریع و تجربه کاربری بهینه (به خصوص با تخصص در مدیریت هاستینگ لینوکس cPanel).</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-primary-dark/70 transform transition duration-500 hover:scale-[1.02]">
+                    <span class="text-4xl text-primary-dark mb-4 block">💻</span>
+                    <h2 class="text-2xl font-bold mb-3">توسعه اپلیکیشن‌های وب سفارشی</h2>
+                    <p class="text-gray-600 mb-4">طراحی و کدنویسی اپلیکیشن‌های تخصصی بر اساس نیازهای منحصر به فرد کسب‌وکار شما با استفاده از به‌روزترین تکنولوژی‌ها.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-primary-dark/70 transform transition duration-500 hover:scale-[1.02]">
+                    <span class="text-4xl text-primary-dark mb-4 block">🎨</span>
+                    <h2 class="text-2xl font-bold mb-3">طراحی واسط کاربری (UI) و تجربه کاربری (UX)</h2>
+                    <p class="text-gray-600 mb-4">استفاده از ابزارهایی مانند المنتور پرو برای ایجاد طرح‌های بصری جذاب و اطمینان از سازگاری کامل در موبایل و دسکتاپ.</p>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center bg-primary-dark/90 p-10 rounded-xl text-white">
+                <h3 class="text-3xl font-bold mb-4">یک وب‌سایت فقط یک طرح گرافیکی نیست، یک ابزار تجاری است.</h3>
+                <p class="text-lg mb-6 opacity-90">اجازه دهید با قدرت برنامه‌نویسی، یک ابزار قوی برای کسب‌وکار شما بسازم.</p>
+                <a href="../contact.html" class="btn-primary inline-block text-lg bg-white !text-primary-dark hover:bg-gray-200 shadow-lg">
+                    درخواست مشاوره وب‌سایت
+                </a>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <div class="mb-4 space-x-4 space-x-reverse">
+                <a href="../index.html" class="hover:text-white transition duration-200">خانه</a> |
+                <a href="../contact.html" class="hover:text-white transition duration-200">تماس</a> |
+                <a href="https://github.com/omids71" class="hover:text-white transition duration-200">GitHub</a> |
+                <a href="https://trawin.ir" class="hover:text-white transition duration-200">Trawin.ir</a>
+            </div>
+            <p>&copy; ۲۰۲۵ Omid. کلیه حقوق محفوظ است. توسعه داده شده با عشق و Tailwind CSS.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

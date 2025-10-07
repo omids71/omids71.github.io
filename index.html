@@ -3,126 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omid | Full Stack Developer & Automator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <title>Omid | معمار راه‌حل‌های دیجیتال</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
     <style>
-        /* CSS مینیمال و حرفه‌ای */
-        :root {
-            --primary-color: #007bff; /* آبی برای دکمه/لینک */
-            --text-color: #333;
-            --background-color: #f4f4f9;
-            --card-background: #ffffff;
-        }
-        body {
-            font-family: 'Vazirmatn', Tahoma, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            text-align: right; /* برای راست به چپ */
-            direction: rtl;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            width: 90%;
-            padding: 40px 30px;
-            background-color: var(--card-background);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border-radius: 12px;
-            animation: fadeIn 1s ease-out;
-        }
-        h1 {
-            color: var(--primary-color);
-            font-weight: 700;
-            margin-bottom: 5px;
-            font-size: 2.5rem;
-        }
-        h2 {
-            font-weight: 400;
-            margin-top: 0;
-            margin-bottom: 25px;
-            font-size: 1.2rem;
-            color: #666;
-        }
-        .status-badge {
-            display: inline-block;
-            padding: 8px 15px;
-            background-color: #ffc107; /* رنگ زرد برای وضعیت */
-            color: #333;
-            border-radius: 6px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            margin-bottom: 30px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-        li {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-        .link {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 700;
-            transition: color 0.3s;
-        }
-        .link:hover {
-            color: #0056b3;
-        }
-        /* انیمیشن محو شدن */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 25px 20px;
-            }
-            h1 {
-                font-size: 2rem;
+        /* تنظیمات سفارشی Tailwind */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1E3A8A', /* آبی تیره حرفه‌ای */
+                        'secondary-light': '#D1D5DB', /* خاکستری ملایم */
+                    },
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'Tahoma', 'sans-serif'],
+                    },
+                }
             }
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>امید (Omid)</h1>
-        <h2>توسعه‌دهنده فول استک، اتوماسیون سازمانی و اسکریپت‌نویسی پیشرفته</h2>
-        
-        <div class="status-badge">
-            🚧 وب‌سایت اصلی در حال ساخت و توسعه است 🚧
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-extrabold text-primary-dark">
+                OMID
+            </div>
+            <button class="md:hidden text-primary-dark text-2xl" id="menu-button">☰</button>
+            
+            <nav class="hidden md:flex space-x-4 space-x-reverse text-sm font-medium">
+                <a href="index.html" class="text-primary-dark hover:text-blue-700 p-2 border-b-2 border-primary-dark">خانه</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary-dark p-2">درباره من</a>
+                <a href="services/automation.html" class="text-gray-600 hover:text-primary-dark p-2">خدمات</a>
+                <a href="articles.html" class="text-gray-600 hover:text-primary-dark p-2">مقالات</a>
+                <a href="contact.html" class="bg-primary-dark text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200">تماس</a>
+            </nav>
         </div>
+        <nav class="hidden md:hidden bg-gray-50 border-t" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-primary-dark border-r-4 border-primary-dark">خانه</a>
+            <a href="about.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">درباره من</a>
+            <a href="services/automation.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">خدمات</a>
+            <a href="articles.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">مقالات</a>
+            <a href="contact.html" class="block py-2 px-4 text-white bg-primary-dark mt-2 hover:bg-blue-700">تماس</a>
+        </nav>
+    </header>
 
-        <p>
-            پورتفولیوی رسمی من به زودی در همین آدرس رونمایی می‌شود. در حال حاضر، مشغول جمع‌آوری و بهینه‌سازی پروژه‌ها و تخصص‌های اصلی خود در حوزه‌های زیر هستم:
-        </p>
+    <main>
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-5xl font-extrabold text-primary-dark mb-4 leading-tight">
+                    معمار راه‌حل‌های دیجیتال
+                </h1>
+                <h2 class="text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    توسعه فول استک، اتوماسیون هوشمند سازمانی و اسکریپت‌نویسی پیشرفته.
+                </h2>
+                <div class="space-x-4 space-x-reverse">
+                    <a href="services/automation.html" class="bg-primary-dark text-white px-8 py-3 rounded-xl text-lg font-bold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                        مشاهده خدمات
+                    </a>
+                    <a href="contact.html" class="bg-gray-200 text-gray-800 px-8 py-3 rounded-xl text-lg font-bold hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+                        تماس بگیرید
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <ul>
-            <li>✨ توسعه وب و اپلیکیشن (Full Stack Web/App Development)</li>
-            <li>🤖 اتوماسیون فرآیندهای سازمانی (Corporate Automation)</li>
-            <li>✍️ اسکریپت‌نویسی و ساخت ابزارهای سفارشی</li>
-        </ul>
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold text-gray-800 mb-10 text-center">تخصص‌های اصلی</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-primary-dark">
+                        <h4 class="text-xl font-bold mb-3 text-primary-dark">اتوماسیون شرکتی</h4>
+                        <p class="text-gray-600">طراحی و پیاده‌سازی سیستم‌های هوشمند برای خودکارسازی فرآیندهای کسب و کار و صرفه‌جویی در زمان و منابع.</p>
+                        <a href="services/automation.html" class="mt-4 inline-block text-sm text-primary-dark hover:text-blue-700 font-bold">بیشتر بدانید →</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-primary-dark">
+                        <h4 class="text-xl font-bold mb-3 text-primary-dark">توسعه وب و اپلیکیشن</h4>
+                        <p class="text-gray-600">ساخت وب‌سایت‌ها و اپلیکیشن‌های قوی و مقیاس‌پذیر از سمت فرانت‌اند تا بک‌اند.</p>
+                        <a href="services/web-design.html" class="mt-4 inline-block text-sm text-primary-dark hover:text-blue-700 font-bold">بیشتر بدانید →</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-primary-dark">
+                        <h4 class="text-xl font-bold mb-3 text-primary-dark">اسکریپت و افزونه</h4>
+                        <p class="text-gray-600">توسعه اسکریپت‌های سفارشی، پلاگین‌ها و ابزارهای خاص منظوره با بهره‌گیری از هوش مصنوعی.</p>
+                        <a href="services/plugins.html" class="mt-4 inline-block text-sm text-primary-dark hover:text-blue-700 font-bold">بیشتر بدانید →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p>
-            در این مدت می‌توانید من را در پلتفرم‌های دیگر دنبال کنید:
-        </p>
-        
-        <p>
-            <a href="https://trawin.ir" class="link">Trawin.ir (وب‌سایت فعلی)</a> | 
-            <a href="#" class="link">لینکدین</a> | 
-            <a href="https://github.com/omids71" class="link">GitHub</a>
-        </p>
-    </div>
+        <section class="py-16 bg-primary-dark text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h3 class="text-3xl font-bold mb-4">آیا آماده راه‌اندازی پروژه بعدی خود هستید؟</h3>
+                <p class="text-lg mb-8 opacity-90">سابقه ۱۶ گیگابایت RAM، Ryzen 5 و تجربه توسعه فول استک من در خدمت پروژه شماست.</p>
+                <a href="about.html" class="bg-white text-primary-dark px-8 py-3 rounded-xl text-lg font-bold hover:bg-gray-200 transition duration-300 shadow-xl">
+                    با من بیشتر آشنا شوید
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <div class="mb-4 space-x-4 space-x-reverse">
+                <a href="index.html" class="hover:text-white transition duration-200">خانه</a> |
+                <a href="contact.html" class="hover:text-white transition duration-200">تماس</a> |
+                <a href="https://github.com/omids71" class="hover:text-white transition duration-200">GitHub</a> |
+                <a href="https://trawin.ir" class="hover:text-white transition duration-200">Trawin.ir</a>
+            </div>
+            <p>&copy; ۲۰۲۵ Omid. کلیه حقوق محفوظ است. توسعه داده شده با عشق و Tailwind CSS.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
-  </html>
-  
+</html>

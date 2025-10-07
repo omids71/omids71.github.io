@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات طراحی لندینگ پیچ | Omid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css"> 
+    <style>
+        /* تنظیمات سفارشی Tailwind */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1E3A8A', 
+                        'secondary-light': '#D1D5DB', 
+                    },
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'Tahoma', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-extrabold text-primary-dark">OMID</div>
+            <button class="md:hidden text-primary-dark text-2xl" id="menu-button">☰</button>
+            <nav class="hidden md:flex space-x-4 space-x-reverse text-sm font-medium">
+                <a href="../index.html" class="text-gray-600 hover:text-primary-dark p-2">خانه</a>
+                <a href="../about.html" class="text-gray-600 hover:text-primary-dark p-2">درباره من</a>
+                <a href="automation.html" class="text-primary-dark hover:text-blue-700 p-2 border-b-2 border-primary-dark">خدمات</a>
+                <a href="../articles.html" class="text-gray-600 hover:text-primary-dark p-2">مقالات</a>
+                <a href="../contact.html" class="bg-primary-dark text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200">تماس</a>
+            </nav>
+        </div>
+        <nav class="hidden md:hidden bg-gray-50 border-t" id="mobile-menu">
+            <a href="../index.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">خانه</a>
+            <a href="../about.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">درباره من</a>
+            <a href="automation.html" class="block py-2 px-4 text-primary-dark border-r-4 border-primary-dark">خدمات</a>
+            <a href="../articles.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">مقالات</a>
+            <a href="../contact.html" class="block py-2 px-4 text-white bg-primary-dark mt-2 hover:bg-blue-700">تماس</a>
+        </nav>
+    </header>
+
+    <main class="py-12 md:py-20">
+        <div class="container mx-auto px-4">
+            
+            <header class="text-center mb-12">
+                <h1 class="text-5xl font-extrabold text-primary-dark mb-4">
+                    لندینگ پیچ‌های با نرخ تبدیل بالا
+                </h1>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    صفحات فرود اختصاصی با تمرکز بر روانشناسی کاربر و هدایت او به سمت اقدام (Call To Action).
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-5xl mx-auto">
+                
+                <div class="p-6 bg-white rounded-xl shadow-lg border-l-4 border-primary-dark/80">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">سرعت لودینگ و بهینه‌سازی فنی</h3>
+                    <p class="text-gray-600">لندینگ پیچ‌ها برای کسب بهترین رتبه در Google PageSpeed و بالاترین سرعت ممکن طراحی می‌شوند، که مستقیماً نرخ تبدیل را افزایش می‌دهد.</p>
+                </div>
+                
+                <div class="p-6 bg-white rounded-xl shadow-lg border-l-4 border-primary-dark/80">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">طراحی بصری متقاعد کننده</h3>
+                    <p class="text-gray-600">طراحی با المنتور پرو و کد سفارشی برای ایجاد تجربه‌ای یکتا که تمرکز کاربر را از بین نمی‌برد و او را به هدف اصلی می‌رساند.</p>
+                </div>
+                
+                <div class="p-6 bg-white rounded-xl shadow-lg border-l-4 border-primary-dark/80">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">اتصال به پلتفرم‌های CRM و آنالیتیکس</h3>
+                    <p class="text-gray-600">تضمین یکپارچگی کامل فرم‌ها با سیستم‌های مدیریت ارتباط با مشتری (CRM) و ابزارهای تحلیلی برای اندازه‌گیری دقیق نتایج.</p>
+                </div>
+                
+                <div class="p-6 bg-white rounded-xl shadow-lg border-l-4 border-primary-dark/80">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">طراحی ریسپانسیو کامل (Mobile First)</h3>
+                    <p class="text-gray-600">با توجه به درصد بالای کاربران موبایل، لندینگ پیچ‌ها با بالاترین استانداردها برای نمایش کامل در تمام ابزارهای هوشمند طراحی می‌شوند.</p>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center bg-primary-dark/90 p-10 rounded-xl text-white">
+                <h3 class="text-3xl font-bold mb-4">آیا کمپین تبلیغاتی شما آماده‌ی جذب مشتری است؟</h3>
+                <p class="text-lg mb-6 opacity-90">بهینه‌ترین لندینگ پیچ را برای افزایش بازدهی تبلیغات شما می‌سازم.</p>
+                <a href="../contact.html" class="btn-primary inline-block text-lg bg-white !text-primary-dark hover:bg-gray-200 shadow-lg">
+                    سفارش طراحی لندینگ پیچ
+                </a>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 text-gray-400 py-8 mt-10">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <div class="mb-4 space-x-4 space-x-reverse">
+                <a href="../index.html" class="hover:text-white transition duration-200">خانه</a> |
+                <a href="../contact.html" class="hover:text-white transition duration-200">تماس</a> |
+                <a href="https://github.com/omids71" class="hover:text-white transition duration-200">GitHub</a> |
+                <a href="https://trawin.ir" class="hover:text-white transition duration-200">Trawin.ir</a>
+            </div>
+            <p>&copy; ۲۰۲۵ Omid. کلیه حقوق محفوظ است. توسعه داده شده با عشق و Tailwind CSS.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

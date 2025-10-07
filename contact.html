@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با امید | درخواست پروژه و مشاوره</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* تنظیمات سفارشی Tailwind */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1E3A8A', 
+                        'secondary-light': '#D1D5DB', 
+                    },
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'Tahoma', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-xl font-extrabold text-primary-dark">OMID</div>
+            <button class="md:hidden text-primary-dark text-2xl" id="menu-button">☰</button>
+            <nav class="hidden md:flex space-x-4 space-x-reverse text-sm font-medium">
+                <a href="index.html" class="text-gray-600 hover:text-primary-dark p-2">خانه</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary-dark p-2">درباره من</a>
+                <a href="services/automation.html" class="text-gray-600 hover:text-primary-dark p-2">خدمات</a>
+                <a href="articles.html" class="text-gray-600 hover:text-primary-dark p-2">مقالات</a>
+                <a href="contact.html" class="bg-primary-dark text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200">تماس</a>
+            </nav>
+        </div>
+        <nav class="hidden md:hidden bg-gray-50 border-t" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">خانه</a>
+            <a href="about.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">درباره من</a>
+            <a href="services/automation.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">خدمات</a>
+            <a href="articles.html" class="block py-2 px-4 text-gray-600 hover:bg-gray-200">مقالات</a>
+            <a href="contact.html" class="block py-2 px-4 text-white bg-primary-dark mt-2 hover:bg-blue-700 border-r-4 border-primary-dark">تماس</a>
+        </nav>
+    </header>
+
+    <main class="py-12 md:py-20">
+        <div class="container mx-auto px-4">
+            
+            <header class="text-center mb-12">
+                <h1 class="text-5xl font-extrabold text-primary-dark mb-4">
+                    ارتباط با من
+                </h1>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    برای شروع یک پروژه اتوماسیون، طراحی وب یا مشاوره تخصصی، از طریق راه‌های زیر با من در تماس باشید.
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                <div class="bg-white p-8 md:p-10 rounded-xl shadow-2xl h-full">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-3">اطلاعات تماس مستقیم</h2>
+                    <div class="space-y-6">
+                        
+                        <div class="flex items-start">
+                            <span class="text-2xl text-primary-dark ml-3 mt-1">📧</span>
+                            <div>
+                                <p class="font-bold text-gray-700">ایمیل کاری:</p>
+                                <a href="mailto:rors7371@gmail.com" class="text-lg text-primary-dark hover:text-blue-700 transition duration-200">rors7371@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <span class="text-2xl text-primary-dark ml-3 mt-1">📞</span>
+                            <div>
+                                <p class="font-bold text-gray-700">شماره تماس (فقط پیام):</p>
+                                <a href="tel:+989338081744" class="text-lg text-primary-dark hover:text-blue-700 transition duration-200">۰۹۳۳۸۰۸۱۷۴۴</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-2xl text-primary-dark ml-3 mt-1">🌐</span>
+                            <div>
+                                <p class="font-bold text-gray-700">وب‌سایت اصلی:</p>
+                                <a href="https://trawin.ir" target="_blank" class="text-lg text-primary-dark hover:text-blue-700 transition duration-200">trawin.ir</a>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-800 pt-4 border-t mt-6">دنبال کنید</h3>
+                        <div class="flex space-x-6 space-x-reverse">
+                            <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" target="_blank" class="text-4xl text-gray-600 hover:text-primary-dark transition duration-200" title="پروفایل لینکدین">
+                                💼
+                            </a>
+                            <a href="https://github.com/omids71" target="_blank" class="text-4xl text-gray-600 hover:text-primary-dark transition duration-200" title="حساب گیت‌هاب">
+                                🐙
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 md:p-10 rounded-xl shadow-2xl h-full">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-3">ارسال پیام فوری</h2>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">نام و نام خانوادگی:</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-dark focus:border-primary-dark transition duration-150">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">آدرس ایمیل:</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-dark focus:border-primary-dark transition duration-150">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">پیام شما:</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary-dark focus:border-primary-dark transition duration-150"></textarea>
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit" class="w-full bg-primary-dark text-white px-6 py-3 rounded-xl text-lg font-bold hover:bg-blue-700 transition duration-300 transform hover:scale-[1.01] shadow-lg">
+                                ارسال پیام به امید
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="bg-gray-800 text-gray-400 py-8 mt-10">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <div class="mb-4 space-x-4 space-x-reverse">
+                <a href="index.html" class="hover:text-white transition duration-200">خانه</a> |
+                <a href="contact.html" class="hover:text-white transition duration-200">تماس</a> |
+                <a href="https://github.com/omids71" class="hover:text-white transition duration-200">GitHub</a> |
+                <a href="https://trawin.ir" class="hover:text-white transition duration-200">Trawin.ir</a>
+            </div>
+            <p>&copy; ۲۰۲۵ Omid. کلیه حقوق محفوظ است. توسعه داده شده با عشق و Tailwind CSS.</p>
+        </div>
+    </footer>
+    
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

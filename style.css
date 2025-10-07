@@ -1,0 +1,64 @@
+/* =======================================
+   Project: Omid Portfolio - Custom Styles
+   Developer: Edith (AI Assistant)
+   ======================================= */
+
+/* 1. تنظیمات فونت و اندازه فونت پایه */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap');
+
+body {
+    /* اطمینان از اعمال فونت Vazirmatn در کل سایت */
+    font-family: 'Vazirmatn', Tahoma, sans-serif !important;
+}
+
+/* 2. کلاس‌های عمومی برای استفاده راحت‌تر در Tailwind */
+
+/* تنظیم دکمه‌های اصلی و حرفه‌ای */
+.btn-primary {
+    background-color: #1E3A8A; /* primary-dark */
+    color: white;
+    padding: 12px 32px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1e40af; /* آبی تیره کمی روشن‌تر */
+    transform: translateY(-2px); /* کمی بالا آمدن در هاور */
+}
+
+/* استایل‌دهی به لینک‌ها در متن */
+a {
+    transition: color 0.2s;
+}
+
+/* 3. استایل‌دهی به کانتینرها و ریست‌های کوچک */
+.container {
+    /* مطمئن می‌شویم که کانتینر مرکزی همیشه فضای مناسبی دارد */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 4. استایل برای آیکون‌ها و المان‌های خاص (در صورت نیاز در آینده) */
+.icon-wrapper {
+    color: #1E3A8A;
+}
+
+
+/* 5. تنظیمات Scrollbar (اختیاری: برای زیبایی در مرورگرهای سازگار) */
+/*
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #1E3A8A;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1e40af;
+}
+*/
